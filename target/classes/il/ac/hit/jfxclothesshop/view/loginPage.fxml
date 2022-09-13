@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.hit.jfxclothesshop.view.LoginController">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="350.0" layoutX="75.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@‏‏ZARA.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="102.0" layoutY="153.0" text="User Name:" />
+      <TextField fx:id="username" layoutX="169.0" layoutY="149.0" prefHeight="25.0" prefWidth="186.0" />
+      <Label layoutX="102.0" layoutY="191.0" text="Password:" />
+      <PasswordField fx:id="password" layoutX="169.0" layoutY="187.0" prefHeight="25.0" prefWidth="186.0" />
+      <Button id="Login" fx:id="loginButton" layoutX="188.0" layoutY="268.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="25.0" prefWidth="123.0" text="Login" />
+      <Label fx:id="responseText" layoutX="103.0" layoutY="233.0" prefHeight="18.0" prefWidth="249.0" textFill="RED" />
+   </children>
+</AnchorPane>

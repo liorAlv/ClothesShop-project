@@ -1,0 +1,8 @@
+{
+  "managerUser": "manager",
+  "managerPassword": "12345",
+  "librarianUser": "librarian",
+  "librarianPassword": "12345",
+  "librarian2User": "tUser2",
+  "librarian2Password": "tPassword2"
+}

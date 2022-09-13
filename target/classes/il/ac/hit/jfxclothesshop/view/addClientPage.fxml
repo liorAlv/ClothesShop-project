@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.hit.jfxclothesshop.view.AddClientController">
+   <children>
+      <Button id="Back" fx:id="back2Button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="&lt;-" />
+      <Label layoutX="204.0" layoutY="39.0" text="New Client" textAlignment="CENTER" textFill="#59c4f0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="150.0" text="Name:" />
+      <TextField id="nameText" fx:id="nameTextField" layoutX="202.0" layoutY="146.0" prefHeight="25.0" prefWidth="211.0" />
+      <Label layoutX="155.0" layoutY="187.0" text="Email:" />
+      <TextField id="emailText" fx:id="emailTextField" layoutX="202.0" layoutY="183.0" prefHeight="25.0" prefWidth="211.0" />
+      <Label layoutX="155.0" layoutY="228.0" text="Phone:" />
+      <TextField id="phoneText" fx:id="phoneTextField" layoutX="202.0" layoutY="224.0" prefHeight="25.0" prefWidth="211.0" />
+      <Label layoutX="147.0" layoutY="269.0" text="Address:" />
+      <TextField id="addressText" fx:id="addressTextField" layoutX="202.0" layoutY="265.0" prefHeight="25.0" prefWidth="211.0" />
+      <Button id="AddClient" fx:id="addClientButton" layoutX="261.0" layoutY="333.0" mnemonicParsing="false" onAction="#onAddClientButtonClick" text="Add Client" />
+      <Label fx:id="responseTextFalseInformation" layoutX="141.0" layoutY="300.0" prefHeight="17.0" prefWidth="294.0" textFill="#e90d0d" />
+        </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.hit.jfxclothesshop.view.AddItemController">
+   <children>
+      <Button id="back" fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="&lt;-" />
+      <Label layoutX="153.0" layoutY="110.0" text="Title:" />
+      <TextField id="titleText" fx:id="titleTextField" layoutX="195.0" layoutY="106.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="146.0" layoutY="152.0" text="Author:" />
+      <TextField id="authorText" fx:id="authorTextField" layoutX="195.0" layoutY="148.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="142.0" layoutY="198.0" text="category:" />
+      <TextField id="categoryText" fx:id="categoryTextField" layoutX="195.0" layoutY="194.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="145.0" layoutY="241.0" text="Location:" />
+      <TextField id="locationText" fx:id="locationTextField" layoutX="195.0" layoutY="237.0" prefHeight="25.0" prefWidth="221.0" />
+      <Button id="addBook" fx:id="addBookButton" layoutX="255.0" layoutY="307.0" mnemonicParsing="false" onAction="#onAddBookButtonClick" prefHeight="25.0" prefWidth="97.0" text="Add Book" />
+      <Label graphicTextGap="15.0" layoutX="204.0" layoutY="39.0" prefHeight="53.0" prefWidth="181.0" text="New Item" textAlignment="CENTER" textFill="#59c4f0" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="136.0" layoutY="280.0" prefHeight="17.0" prefWidth="297.0" textFill="#e01515" />
+   </children>
+</AnchorPane>

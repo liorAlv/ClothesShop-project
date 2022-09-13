@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.hit.jfxclothesshop.view.InfoItemController">
+   <children>
+      <Button id="Back" fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="&lt;-" />
+      <Label layoutX="74.0" layoutY="156.0" text="Title:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" layoutX="115.0" layoutY="156.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="197.0" text="Author:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="authorLabel" layoutX="112.0" layoutY="197.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="239.0" text="Category:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="categoryLabel" layoutX="112.0" layoutY="239.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="282.0" text="Location:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationLabel" layoutX="112.0" layoutY="282.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="126.0" text="Is Borrowed">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="isBorrowedLabel" layoutX="483.0" layoutY="159.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="198.0" text="Client id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientLabel" layoutX="483.0" layoutY="242.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="39.0" prefHeight="67.0" prefWidth="119.0" text="BOOK" textFill="#59c4f0">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="114.0" text="SKU:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="skuLabel" layoutX="120.0" layoutY="114.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="borrowButton" layoutX="514.0" layoutY="328.0" mnemonicParsing="false" onAction="#onBorrowButtonClick" prefHeight="25.0" prefWidth="77.0" text="Borrow" />
+      <Button fx:id="returnButton" layoutX="488.0" layoutY="276.0" mnemonicParsing="false" onAction="#onReturnButtonClick" text="Return" />
+      <Label fx:id="explanationText" layoutX="14.0" layoutY="332.0" text="To rent the book please enter client's ID or phone number:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="clientIdPhoneField" layoutX="350.0" layoutY="328.0" />
+      <Button id="removeBook" fx:id="removeBookButton" layoutX="469.0" layoutY="60.0" mnemonicParsing="false" onAction="#onRemoveBookButtonClick" text="Remove Book" />
+      <Label fx:id="clientDoesntExist" layoutX="200.0" layoutY="365.0" />
+   </children>
+</AnchorPane>

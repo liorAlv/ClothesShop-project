@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.hit.jfxclothesshop.view.ClientListController">
+   <children>
+      <TableView fx:id="dataTable" layoutX="33.0" layoutY="130.0" prefHeight="255.0" prefWidth="539.0">
+        <columns>
+            <TableColumn fx:id="idCTableColumn" prefWidth="47.33331298828125" text="ID" />
+            <TableColumn fx:id="nameCTableColumn" prefWidth="88.0" text="Name" />
+          <TableColumn fx:id="emailCTableColumn" prefWidth="125.0" text="Email" />
+          <TableColumn fx:id="addressCTableColumn" prefWidth="138.0" text="Address" />
+            <TableColumn fx:id="phoneCTableColumn" prefWidth="139.0" text="Phone" />
+
+        </columns>
+      </TableView>
+      <Label layoutX="232.0" layoutY="24.0" text="CLIENTS" textAlignment="CENTER" textFill="#59c4f0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button id="Back" fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="&lt;-" />
+      <Button id="AddClient" fx:id="addClientButton" layoutX="492.0" layoutY="31.0" mnemonicParsing="false" onAction="#onAddClientButtonClient" prefHeight="25.0" prefWidth="90.0" text="Add Client" />
+      <Label layoutX="43.0" layoutY="94.0" text="Search Client:" />
+      <TextField fx:id="searchClientField" layoutX="122.0" layoutY="90.0" prefHeight="25.0" prefWidth="337.0" />
+   </children>
+</Pane>
